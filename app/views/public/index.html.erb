@@ -1,0 +1,31 @@
+<main id="center" class="column">
+    <article>
+
+        <center>
+            <%= form_tag("search", :method => "get", id: "search-form") do %>
+            <%= text_field_tag :search, params[:search], placeholder: "Search hashtag" %>
+            <%= submit_tag "Search" %>
+            <% end %>
+        </center>
+
+        <table class="table" border="1px">
+            <tr>
+                <td>#</td>
+                <td>Twitter</td>
+            </tr>
+            <% 
+            no = 1 
+            @data_twitter.each do |tweet|
+            %>
+                <tr>
+                    <td><%= no %></td>
+                    <td><%= tweet.text%></td>
+                </tr>
+            <% 
+            no += 1
+            end 
+            %>
+        </table>
+
+    </article>                              
+</main>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Tag</title>
+    <style type="text/css">
+
+        /* Layout */
+        body {
+            min-width: 630px;
+        }
+
+        .table {
+            background-color: #ffffff;
+            margin-bottom: 2rem;
+            max-width: 100%;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        #container {
+            padding-left: 200px;
+            padding-right: 190px;
+        }
+        
+        #container .column {
+            position: relative;
+            float: left;
+        }
+        
+        #center {
+            padding: 10px 20px;
+            width: 100%;
+        }
+
+        /* Make the columns the same height as each other */
+        #container {
+            overflow: hidden;
+        }
+
+        #container .column {
+            padding-bottom: 1001em;
+            margin-bottom: -1000em;
+        }
+
+        /* Aesthetics */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family:Sans-serif;
+            line-height: 1.5em;
+        }
+        
+        p {
+            color: #555;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav ul a {
+            color: darkgreen;
+            text-decoration: none;
+        }
+
+        #center {
+            background: #fff;
+        }
+
+        #container .column {
+            padding-top: 1em;
+        }
+        
+    </style>
+    
+</head>
+
+<body>
+
+    <div id="container">
+
+        <%=yield%>
+        
+    </div>
+
+</body>
+
+</html>

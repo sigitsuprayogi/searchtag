@@ -1,0 +1,19 @@
+
+default: &default
+  adapter: postgresql
+  encoding: utf8
+  pool: 5
+  username: postgres
+  password: postgres
+
+development:
+  <<: *default
+  database: searchtag
+
+test:
+  #<<: *default
+  database: searchtag
+
+production:
+  #<<: *default
+  database: searchtag
