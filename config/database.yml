@@ -2,13 +2,14 @@
 default: &default
   adapter: postgresql
   encoding: utf8
+  host : ec2-54-225-127-147.compute-1.amazonaws.com
   pool: 5
-  username: postgres
-  password: postgres
+  username: qdettkstjqerzb
+  password: 6df4f818a0d36d04be4828f9e935a1d143332fd2c7bc5c32731ea257b21b3825
 
 development:
   <<: *default
-  database: searchtag
+  database: d3d9id1e3kkijm
 
 test:
   #<<: *default
