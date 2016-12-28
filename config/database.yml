@@ -7,7 +7,7 @@ default: &default
   password: postgres
 
 development:
-  <<: *default
+  #<<: *default
   database: searchtag
 
 test:
@@ -15,5 +15,5 @@ test:
   database: searchtag
 
 production:
-  #<<: *default
+  <<: *default
   database: searchtag
